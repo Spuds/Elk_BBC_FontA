@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.elkarte.net/site/package-info">
+<package-info xmlns="http://www.elkarte.net/site/package-info" xmlns:elk="http://www.elkarte.net/">
+	<license><![CDATA[
+/**
+ *
+ * @author Spuds
+ * @license Mozilla Public License version 1.1 http://www.mozilla.org/MPL/1.1/
+ *
+ * @version 1.0
+ */
+	]]></license>
+	<id>spuds:bbcfa</id>
+	<name>BBC FontAwesome Button</name>
+	<version>1.0</version>
+	<type>addon</type>
+	<install for="1.0 - 1.1">
+		<require-file name="FaButton.subs.php" destination="SUBSDIR" />
+		<require-file name="FaButton.plugin.js" destination="THEMEDIR/scripts" />
+		<require-file name="FaButton.css" destination="THEMEDIR/css" />
+		<hook hook="integrate_bbc_buttons" file="SUBSDIR/FaButton.subs.php" function="ibb_fa_button" />
+		<hook hook="integrate_editor_plugins" file="SUBSDIR/FaButton.subs.php" function="iep_fa_button" />
+	</install>
+	<uninstall for="1.0 - 1.1">
+		<hook reverse="true" hook="integrate_bbc_buttons" file="SUBSDIR/FaButton.subs.php" function="ibb_fa_button" />
+		<hook reverse="true" hook="integrate_editor_plugins" file="SUBSDIR/FaButton.subs.php" function="iep_fa_button" />
+		<remove-file name="SUBSDIR/FaButton.subs.php" />
+		<remove-file name="THEMEDIR/scripts/FaButton.plugin.js" />
+		<remove-file name="THEMEDIR/css/FaButton.css" />
+	</uninstall>
+</package-info>

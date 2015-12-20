@@ -1,0 +1,26 @@
+.sceditor-button-fontawesome div {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAK8AAACvABQqw0mAAAAB90RVh0U29mdHdhcmUATWFjcm9tZWRpYSBGaXJld29ya3MgOLVo0ngAAADSSURBVDiN3dIhSoRhEMbx3ycri0WLyUNY5gWNYrJ6A4NRsGoSzCaLewIPsMUgWIXlRcSyQS9g2aQ2GcsKn8sq7FrEBwaGYZ7/MMM0mek3aiKiiwNc11ofZgV0sIUzDLABpZQlBJbxjvta63Pb+NnTRMQKnnCIWxxjD4sTw/o4xwjbOMJqk5lKKcPxGldTjD9qoZV3ZzVPAubSPwB0vqkPcInHcc8O9n098htO24ARLtCb8pH9UsoJdrGGO9zUWl9kpogYRsR6Zpo1/s4RN/E6D+AD0+hbH6d3zkIAAAAASUVORK5CYII=);
+}
+/* Add fontawesome to the textarea font family so the icons are visible */
+.sceditor-container textarea {
+	font-family: "Segoe UI", "Helvetica Neue", "Liberation Sans", "Nimbus Sans L", "Trebuchet MS", Arial, sans-serif, FontAwesome;
+}
+/* drop down */
+.sceditor-fontawesome {
+	width: 300px;
+	height: 250px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+/* icons */
+.sceditor-fontawesome i {
+	color: #5BA048;
+	font-size: 1.429em;
+	text-align: center;
+	cursor: pointer;
+	padding: 3px 0;
+	width: 20%;
+}
+.sceditor-fontawesome i:hover {
+	color: #CCCCCC;
+}
