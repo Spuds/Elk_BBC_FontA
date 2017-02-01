@@ -6,12 +6,9 @@
  * @copyright (c) 2015 Spuds
  * @license Mozilla Public License version 1.1 http://www.mozilla.org/MPL/1.1/
  *
- * @version 1.0
+ * @version 1.0.1
  *
  */
-
-if (!defined('ELK'))
-	die('No access...');
 
 /**
  * ibb_fa_button
@@ -49,4 +46,17 @@ function iep_fa_button($editor_id)
 	global $context;
 
 	$context['controls']['richedit'][$editor_id]['plugin_addons'][] = 'fontawesome';
+}
+
+/**
+ * integrate_init_theme
+ *
+ * Called from Load.php, used here to turn on FA support in ElkArte 1.1
+ */
+function iit_fa_button()
+{
+	global $modSettings;
+
+	if (empty($modSettings['require_font-awesome']))
+		$modSettings['require_font-awesome'] = true;
 }
