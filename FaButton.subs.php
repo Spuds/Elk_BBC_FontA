@@ -27,10 +27,10 @@ function ibb_fa_button(&$bbc_tags)
 	$bbc_tags['row1'][2] = elk_array_insert($where, 'font', array('fontawesome'), 'after', false);
 
 	// Add the javascript, this tells the editor what to do with the new button
-	loadJavascriptFile('faButton.plugin.js', array(), 'faButton');
+	loadJavascriptFile('FaButton.plugin.js', array(), 'faButton');
 
 	// CSS specific to this button presentation in the editor toolbar
-	loadCSSFile('faButton.css', array(), 'fa44');
+	loadCSSFile('FaButton.css', array(), 'fa44');
 }
 
 /**
