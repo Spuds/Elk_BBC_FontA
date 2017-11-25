@@ -12,7 +12,7 @@
 	]]></license>
 	<id>spuds:bbcfa</id>
 	<name>BBC FontAwesome Button</name>
-	<version>1.0</version>
+	<version>1.0.2</version>
 	<type>addon</type>
 	<install for="1.0 - 1.1">
 		<require-file name="FaButton.subs.php" destination="SUBSDIR" />
